@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-public class Split_Sequence {
+public class SplitAndSequence {
 
 	public static void main(String[] args) throws IOException {
 		//SplitFile();
