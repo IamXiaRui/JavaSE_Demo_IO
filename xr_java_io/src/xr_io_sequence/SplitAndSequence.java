@@ -15,7 +15,7 @@ import java.util.Iterator;
 public class SplitAndSequence {
 
 	public static void main(String[] args) throws IOException {
-		//SplitFile();
+		// SplitFile();
 		SequenceFile();
 	}
 
