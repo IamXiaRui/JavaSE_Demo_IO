@@ -49,7 +49,8 @@
 
 3、记得刷新缓冲区：flush或者close。其实关闭缓冲区，就是在关闭缓冲区中的流对象，所以只需要关闭缓冲流即可。
 
->>特别：缓冲区提供了跨平台的换行符 newLine();
+>特别：
+>>缓冲区提供了跨平台的换行符 newLine();
 
 
 ###BufferReader
@@ -90,7 +91,6 @@ setLineNumber(int) 和 getLineNumber()，它们可分别用于设置和获取当
 
 	BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
- 
 3、OutputStreamWriter 是字符流通向字节流的桥梁：每次调用 write() 方法都会导致在给定字符（或字符集）上调用编码转换器。在写入底层输出流之前，得到的这些字节将在缓冲区中累积。可以指定此缓冲区的大小，不过，默认的缓冲区对多数用途来说已足够大。注意，传递给 write() 方法的字符没有缓冲。必须刷新：flush();
 
 	Writer out = new BufferedWriter(new OutputStreamWriter(System.out));
